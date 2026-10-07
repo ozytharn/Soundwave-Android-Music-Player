@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Abhinav Kumar\\.gradle\\daemon\\8.14.4\\com.dcsxgdg.soundwave.app-debug-54:\\raw_merfolk.mp3.flat",
+        "source": "C:\\Users\\Abhinav Kumar\\.gradle\\daemon\\8.14.4\\com.dcsxgdg.soundwave.app-main-56:\\raw\\merfolk.mp3"
+    },
+    {
+        "merged": "com.dcsxgdg.soundwave.app-debug-54:/drawable_ic_launcher.xml.flat",
+        "source": "com.dcsxgdg.soundwave.app-main-56:/drawable/ic_launcher.xml"
+    }
+]

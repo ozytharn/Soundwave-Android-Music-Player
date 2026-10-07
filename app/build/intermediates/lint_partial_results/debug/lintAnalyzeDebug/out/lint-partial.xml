@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.13.2" type="partial_results">
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsSent">
+                    <map id="android.intent.action.VIEW (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/dcsxgdg/soundwave/MainActivity.kt"
+                            line="449"
+                            column="37"
+                            startOffset="18432"
+                            endLine="452"
+                            endColumn="38"
+                            endOffset="18627"/>
+                    </map>
+            </map>
+    </map>
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.dcsxgdg.soundwave.MainActivity"
+                    boolean="true"/>
+                <entry
+                    name="com.dcsxgdg.soundwave.playback.PlaybackService"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <entry
+            name="model"
+            string="drawable[ic_launcher(U)],raw[merfolk(U)],string[app_name(U)],style[Theme_Soundwave(U)];;;;"/>
+    </map>
+
+</incidents>

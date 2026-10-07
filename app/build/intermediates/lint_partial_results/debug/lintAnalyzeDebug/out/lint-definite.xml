@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.13.2" type="incidents">
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 37"
+            oldString="35"
+            replacement="37"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="14"
+            column="9"
+            startOffset="299"
+            endLine="14"
+            endColumn="23"
+            endOffset="313"/>
+    </incident>
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of Gradle than 8.14.4 is available: 8.14.5">
+        <fix-replace
+            description="Update to 8.14.5"
+            oldString="8.14.4"
+            replacement="8.14.5"
+            priority="0"/>
+        <location
+            file="$HOME/Desktop/DCSXGDG/android/gradle/wrapper/gradle-wrapper.properties"
+            line="3"
+            column="17"
+            startOffset="81"
+            endLine="3"
+            endColumn="81"
+            endOffset="145"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.15.0 is available: 1.19.1">
+        <fix-replace
+            description="Change to 1.19.1"
+            family="Update versions"
+            oldString="1.15.0"
+            replacement="1.19.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="38"
+            column="20"
+            startOffset="792"
+            endLine="38"
+            endColumn="51"
+            endOffset="823"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.activity:activity-compose than 1.10.1 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.10.1"
+            replacement="1.13.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="39"
+            column="20"
+            startOffset="844"
+            endLine="39"
+            endColumn="63"
+            endOffset="887"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.7 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.8.7"
+            replacement="2.11.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="40"
+            column="20"
+            startOffset="908"
+            endLine="40"
+            endColumn="68"
+            endOffset="956"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.8.7 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.8.7"
+            replacement="2.11.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="41"
+            column="20"
+            startOffset="977"
+            endLine="41"
+            endColumn="74"
+            endOffset="1031"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-compose than 2.8.9 is available: 2.10.2">
+        <fix-replace
+            description="Change to 2.10.2"
+            family="Update versions"
+            oldString="2.8.9"
+            replacement="2.10.2"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="42"
+            column="20"
+            startOffset="1052"
+            endLine="42"
+            endColumn="66"
+            endOffset="1098"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.media3:media3-exoplayer than 1.6.1 is available: 1.11.1">
+        <fix-replace
+            description="Change to 1.11.1"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.11.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="48"
+            column="20"
+            startOffset="1408"
+            endLine="48"
+            endColumn="60"
+            endOffset="1448"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.media3:media3-session than 1.6.1 is available: 1.11.1">
+        <fix-replace
+            description="Change to 1.11.1"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.11.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="49"
+            column="20"
+            startOffset="1469"
+            endLine="49"
+            endColumn="58"
+            endOffset="1507"/>
+    </incident>
+
+    <incident
+        id="ExportedService"
+        severity="warning"
+        message="Exported service does not require permission">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set permission"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="permission"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set exported=&quot;false&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="exported"
+                value="false"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="23"
+            column="10"
+            startOffset="1024"
+            endLine="23"
+            endColumn="17"
+            endOffset="1031"/>
+    </incident>
+
+</incidents>
